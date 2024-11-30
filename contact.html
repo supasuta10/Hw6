@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา</title>
+  <script src="https://cdn.tailwindcss.com"></script>  <title>T.Tree Shop</title>
+  <link rel="preconnect" href="https://fonts.google.com/specimen/Parkinsans">
+  <link rel="preconnect" href="https://fonts.google.com/specimen/IBM.com"     crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    tcolor:{
+                        1: '#FFFAFA',
+                        2: '#000000',
+                        3: '#FFFFFF',
+                        4: '#DCDCDC',
+                        5: '#FFFF00',
+                    },
+                    bgcolor:{
+                        1: '#006400',
+                        2: '#228B22',
+                        3: '#2E8B57',
+                        4: '#FFFFFF',
+                    },
+                },
+                fontFamily:{
+                    //กำหนดfontตัวที่1
+                    'a1': ['Parkinsans','sans-serif'],
+                    //กำหนดfontตัวที่2
+                    'a2': ['IBM','sans-serif'],
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-bgcolor-3 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-bgcolor-1 text-tcolor-1 p-4">
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:text-tcolor-5">หน้าแรก</a></li>
+      <li><a href="home.html" class="hover:text-tcolor-5">ข้อมูลต้นไม้</a></li>
+      <li><a href="contact.html" class="hover:text-tcolor-5">ติดต่อเรา</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <section class="text-center py-20">
+    <h2 class="text-3xl text-tcolor-2 font-bold">ติดต่อเรา</h2>
+    <form class="max-w-md mx-auto mt-8 bg-white p-8 rounded-lg shadow-lg">
+      <label for="name" class="block text-left text-tcolor-2 mb-2">ชื่อ</label>
+      <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg mb-4" required>
+
+      <label for="email" class="block text-left text-tcolor-2 mb-2">อีเมล</label>
+      <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg mb-4" required>
+
+      <label for="message" class="block text-left text-tcolor-2 mb-2">ข้อความ</label>
+      <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-lg mb-4" rows="4" required></textarea>
+
+      <button type="submit" class="bg-green-600 text-white p-3 rounded-lg hover:bg-green-800">ส่งข้อความ</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-bgcolor-1 text-tcolor-1 text-center py-4 mt-12">
+    <p>&copy; น.ส.ศุภสุตา สุขธิติพัฒน์ 67402040911</p>
+  </footer>
+</body>
+</html>
